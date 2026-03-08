@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
@@ -50,7 +51,9 @@ export function Header() {
       <header className={`sticky top-0 z-50 transition-all duration-300 ${headerClass}`}>
         <div className="mx-auto flex h-20 w-full max-w-[1200px] items-center justify-between px-5 md:px-8">
           <Link href="/" className={`focus-ring inline-flex items-center gap-3 ${logoClass}`}>
-            <span className="font-serifDisplay text-2xl leading-none">M</span>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy-950 p-1.5">
+              <Image src="/images/mc_v2_refined_white.svg" alt="Mediforma Consulting ロゴ" width={28} height={28} />
+            </span>
             <span className="font-english text-sm uppercase tracking-[0.18em]">Mediforma Consulting</span>
           </Link>
 

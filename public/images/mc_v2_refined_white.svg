@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 960 960">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke-linejoin: round;
+      }
+
+      .st0, .st1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 20px;
+      }
+
+      .st1 {
+        stroke-miterlimit: 16;
+      }
+    </style>
+  </defs>
+  <polyline class="st0" points="208 736 208 224 480 528 752 224 752 736"/>
+  <path class="st1" d="M680,288c-106-106.4-278.3-106.7-384.7-.7-106.4,106-106.7,278.3-.7,384.7,106,106.4,278.3,106.7,384.7.7.2-.2.4-.4.7-.7"/>
+</svg>
