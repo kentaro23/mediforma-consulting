@@ -38,26 +38,21 @@ export function Header() {
 
   const headerClass = useMemo(() => {
     if (isHomeTop) {
-      return "bg-transparent text-white";
+      return "bg-white/88 text-navy-800 shadow-sm backdrop-blur";
     }
     return "bg-white/95 text-navy-800 shadow-sm backdrop-blur";
   }, [isHomeTop]);
 
   const linkBase = "focus-ring rounded-md px-3 py-2 font-body text-[15px] transition";
-  const logoClass = isHomeTop ? "text-white" : "text-navy-800";
+  const logoClass = "text-navy-800";
 
   return (
     <>
       <header className={`sticky top-0 z-50 transition-all duration-300 ${headerClass}`}>
         <div className="mx-auto flex h-20 w-full max-w-[1200px] items-center justify-between px-5 md:px-8">
           <Link href="/" className={`focus-ring inline-flex items-center gap-3 ${logoClass}`}>
-            <span className="inline-flex h-10 w-10 items-center justify-center p-1">
-              <Image
-                src={isHomeTop ? "/images/mc_v2_refined_white.svg" : "/images/mc_v2_refined.svg"}
-                alt="Mediforma Consulting ロゴ"
-                width={28}
-                height={28}
-              />
+            <span className="inline-flex h-12 w-12 items-center justify-center p-1">
+              <Image src="/images/mc_v2_refined.svg" alt="Mediforma Consulting ロゴ" width={38} height={38} />
             </span>
             <span className="font-english text-sm uppercase tracking-[0.18em]">Mediforma Consulting</span>
           </Link>
@@ -125,7 +120,7 @@ export function Header() {
 
           <button
             type="button"
-            className={`focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border lg:hidden ${isHomeTop ? "border-white/60" : "border-grayx-200"}`}
+            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-grayx-300 lg:hidden"
             aria-label={HEADER_UI.openMenuLabel}
             onClick={() => setMobileOpen(true)}
           >
