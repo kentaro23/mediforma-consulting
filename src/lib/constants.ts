@@ -190,6 +190,7 @@ export const PRICING_PAGE = {
       title: "SPOT",
       subtitle: "スポット相談",
       price: "¥100,000〜 / 回",
+      isFeatured: false,
       recommendation: "まずは試してみたい方におすすめ",
       features: [
         "60〜90分のコンサルティングセッション",
@@ -218,6 +219,7 @@ export const PRICING_PAGE = {
       title: "PROJECT",
       subtitle: "プロジェクト型",
       price: "¥300,000〜 / 件",
+      isFeatured: false,
       recommendation: "本格的にDXプロジェクトを進めたい方におすすめ",
       features: [
         "課題分析〜戦略策定〜導入〜定着まで",
