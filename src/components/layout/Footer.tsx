@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { FOOTER_CONTENT, SITE } from "@/lib/constants";
@@ -9,7 +10,9 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="inline-flex items-center gap-3">
-              <span className="font-serifDisplay text-3xl">M</span>
+              <span className="inline-flex h-12 w-12 items-center justify-center p-1">
+                <Image src="/images/mc_v2_refined_white.svg" alt="Mediforma Consulting ロゴ" width={38} height={38} />
+              </span>
               <span className="font-english text-xs uppercase tracking-[0.18em]">Mediforma Consulting</span>
             </div>
             <p className="mt-5 text-sm leading-8 text-white/78">{FOOTER_CONTENT.description}</p>
